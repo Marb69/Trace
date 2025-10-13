@@ -249,7 +249,7 @@ header{
 .hero-section .content{
 
 
-    padding: 0 13px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,7 +274,7 @@ header{
 }
 .hero-section .content .context p{
 
-    font-size: .9rem;
+    font-size: .8rem;
     color: #808080;
 }
 
@@ -317,11 +317,13 @@ header{
     border-radius: 11px;
     text-align: center;
     text-decoration: none;
+    font-weight: 540;
 }
 
 .cta-btn .cta-learn{
 
     background-color: #06D90D;
+    color: #0A0A0C;
 
 }
 
