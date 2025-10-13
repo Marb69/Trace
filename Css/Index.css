@@ -6,17 +6,17 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open-Sans';
     font-family: 'Outfit';
     src: url(/Assets/Fonts/Outfit/Outfit-VariableFont_wght.ttf);
-    src: url(/Assets/Fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(/Assets/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
     
 }
 
 
 body{
      
-    font-family: 'Outfit';
+    font-family:'Open-Sans',sans-serif;
     background-color: #0A0A0C;
     color: #E6EDF3;
 }
@@ -52,8 +52,28 @@ header{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
- 
+    font-family: 'Outfit',sans-serif;
   
+}
+
+.navbrand-con{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.navbrand-con img{
+
+    width: 28px;
+    height: 28px;
+
+}
+
+.navbrand img{
+
+    width: 100%;
 }
 .Navbar-Container{
 
@@ -75,7 +95,7 @@ header{
 
     
     width: 100%;
-    height: 50vh;
+    height: 75vh;
     left: 0;
     position: absolute;
      background-color: #0A0A0C;
@@ -84,9 +104,10 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 15px 23px;
-      top: -800px;
+      top: -1000px;
         transition: all .3s ease-in-out;
         z-index: 999;
+        font-family: 'Outfit';
       
 }
 
@@ -101,7 +122,8 @@ header{
     flex-direction: column;
     list-style: none;
     height: 90%;
-  
+    text-align: center;
+
     justify-content: center;
      gap: 30px;
 }
@@ -110,19 +132,43 @@ header{
 
     text-decoration: none;
     color: #E6EDF3;
+        font-weight: 530;
 }
 
-.get-started{
+.nav-cta{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.nav-cta a{
+
 
     display: block;
     padding: 10px 10px;
     text-decoration: none;
-    background-color: greenyellow;
     width: 100%;
     text-align: center;
-    border-radius: 4px;
+     border-radius: 11px;
+    font-weight: 530;
+  
+
+}
+.contact-us{
+
+   
+    border: solid 1px #2F81F7;
+    color: #2F81F7;
 }
 
+.get-started{
+
+
+    background-color: #06D90D;
+    color: #0A0A0C;
+}
 .nav-bg-blured{
 
    height: 100vh;
@@ -131,7 +177,7 @@ header{
    left: 0;
    top: 0;
    backdrop-filter: blur(10px);
-      top: -900px;
+      top: -1000px;
       transition: all .3s ease-in-out;
 }
 
@@ -190,15 +236,28 @@ header{
     z-index: -1;
 }
 
+.hero-section .content-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 25px 0;
+}
 .hero-section .content{
 
 
-    padding: 0 15px;
+    padding: 0 13px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 1em;
 
 }
 
@@ -207,32 +266,73 @@ header{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
 }
 .hero-section .content .context h1{
 
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 .hero-section .content .context p{
 
     font-size: .9rem;
+    color: #808080;
 }
+
+
+.hero-section .content .image img{
+
+    width: 65vw;
+}
+
+
+.hero-section .content-container .partner-brand{
+
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    overflow-y: hidden;
+    background-color: #141D2B;
+    padding: 13px 0px;
+    width: 100%;
+    align-items: center;
+}
+
+.hero-section .content-container .partner-brand li img{
+
+    width: 17vw;
+}
+
 .cta-btn{
 
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 13px;
 
 }
 .cta-btn a{
 
     display: block;
     padding: 13px 19px;
-    background-color: aquamarine;
-    border-radius: 3px;
+    border-radius: 11px;
     text-align: center;
     text-decoration: none;
 }
+
+.cta-btn .cta-learn{
+
+    background-color: #06D90D;
+
+}
+
+.cta-btn .cta-enroll{
+
+    border: #2F81F7 solid 1px;
+    color: #2F81F7;
+    
+}
+
+
 .bg-blured-green{
 
     width:350px;
