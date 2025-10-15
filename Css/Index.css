@@ -84,7 +84,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 50px;
-      position: fixed;
+    position: fixed;
     top: 0;
     background-color: #0A0A0C;
     
@@ -104,7 +104,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 15px 23px;
-      top: -1000px;
+      top: -4000px;
         transition: all .3s ease-in-out;
         z-index: 999;
         font-family: 'Outfit';
@@ -141,6 +141,7 @@ header{
     flex-direction: column;
     gap: 8px;
     width: 100%;
+    gap: 11px;
 }
 
 .nav-cta a{
@@ -177,7 +178,7 @@ header{
    left: 0;
    top: 0;
    backdrop-filter: blur(10px);
-      top: -1000px;
+      top: -2000px;
       transition: all .3s ease-in-out;
 }
 
@@ -226,14 +227,20 @@ header{
      
 }
 
+
+
+
+/*hero section*/
+
 .hero-section{
 
    
     position: relative;
     overflow:hidden;
     width: 100%;
-    height: 94.3vh;
+    height: 94vh;
     z-index: -1;
+    padding: 20px 0;
 }
 
 .hero-section .content-container{
@@ -244,7 +251,7 @@ header{
     align-items: center;
     height: 100%;
     width: 100%;
-    padding: 25px 0;
+  
 }
 .hero-section .content{
 
@@ -254,8 +261,7 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: auto;
-    height: auto;
+    height: 100%;
     flex-direction: column-reverse;
     gap: 1em;
 
@@ -270,11 +276,11 @@ header{
 }
 .hero-section .content .context h1{
 
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 .hero-section .content .context p{
 
-    font-size: .8rem;
+    font-size: .7rem;
     color: #808080;
 }
 
@@ -308,7 +314,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 13px;
-
+   width: 100%;
 }
 .cta-btn a{
 
@@ -318,6 +324,7 @@ header{
     text-align: center;
     text-decoration: none;
     font-weight: 540;
+    width: 100%;
 }
 
 .cta-btn .cta-learn{
@@ -335,7 +342,7 @@ header{
 }
 
 
-.bg-blured-green{
+.hero-section .bg-blured-green{
 
     width:350px;
     height: 60px;
@@ -348,7 +355,7 @@ header{
     top: 130px;
 }
 
-.bg-blured-blue{
+.hero-section .bg-blured-blue{
 
     width:350px;
     height: 60px;
@@ -356,8 +363,208 @@ header{
     border-radius: 50%;
     filter: blur(120px);
     position: absolute;
-    left:-20px;
-    top: 730px;
+    left:-5vh;
+    bottom: 0;
+}
+
+/*hero section*/
+
+
+
+
+
+/*course section*/
+
+.course-section{
+
+   
+    position: relative;
+    overflow:hidden;
+    width: 100%;
+    z-index: -1;
+    padding: 20px 0;
 }
 
 
+.course-section .bg-blured-green{
+
+    width:350px;
+    height: 60px;
+    background-color: rgb(53, 196, 53);
+    border-radius: 50%;
+    filter: blur(120px);
+    position: absolute;
+    left: 250px;
+    top: 730px;
+}
+
+.course-section .bg-blured-blue{
+
+    width:350px;
+    height: 60px;
+    background-color: rgb(5, 42, 252);
+    border-radius: 50%;
+    filter: blur(120px);
+    position: absolute;
+    left:-50px;
+    top: -40px;
+}
+
+
+.course-section .content-container{
+
+    padding: 0 25px;
+    margin-top: 40px;
+
+}
+
+.course-section .content-container .course-items{
+
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 40px;
+}
+ .course-items .item{
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+ }
+ 
+.course-items .item .image{
+
+       width: 70vw;
+}
+.course-items .item .image img{
+
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.course-items .item .context{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-items .item .context p{
+
+    font-size: .6rem;
+    margin-bottom: 17px;
+    color: #808080;
+    text-align: justify;
+}
+
+.course-items .item .description .enroll-btn{
+
+    display: block;
+     font-size: .7em;
+     width: 50%;
+     text-decoration: none;
+     color: #2F81F7;
+     
+}
+.course-section .course-journey{
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+}
+
+.course-section .course-journey .item{
+
+    padding: 11px 14px;
+    display: flex;
+    background-color: #141D2B;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+}
+.course-section .course-journey .item img{
+
+    width: 25px;
+}
+.course-section .course-journey .item p{
+
+    font-size: .7em;
+    color: #808080;
+}
+
+/*course section*/
+
+
+
+
+
+
+/*tablet ni*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+
+
+    .nav-link li a{
+
+        font-size: 1.5em;
+    }
+    .nav-cta{
+
+        flex-direction: row;
+    }
+
+    .hero-section .content-container .content .context  h1{
+
+         font-size: 3.5rem;
+    }
+
+    .hero-section .content-container .content .context  p{
+
+        font-size: 1.4rem;
+        
+    }
+
+
+      .hero-section{
+        height: 95vh;
+      }
+
+       .course-section .content-container .course-items{
+
+        flex-direction: row;
+        
+       }
+         .course-section .content-container .course-items .item {
+
+            flex-direction: column;
+         }
+        .course-section .content-container .course-items .item .image{
+
+          width: 30vw;
+       }
+
+        .course-section .content-container .course-items .item  .description .context h4{
+
+            font-size: 1.3rem;
+        }
+
+         .course-section .content-container .course-items .item  .description .context p{
+
+            font-size: .9rem;
+        }
+
+         .course-section .content-container .course-items .item  .description .enroll-btn{
+
+            font-size: 1em;
+         }
+}
+
+
+
+
+
+/*tablet ni*/
