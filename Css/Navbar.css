@@ -1,0 +1,314 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/Assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-display: swap;
+   
+
+}
+
+
+@font-face {
+    
+    font-family: 'Poppins';
+    src: url(/Assets/Fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    font-display: swap;
+
+}
+
+
+
+.Header .Content{
+
+ 
+   
+  
+   
+     padding-right: 15px;
+     padding-left: 15px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     z-index: 999;
+    
+   
+}
+
+.Header .Content .Logo{
+
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.Header .Content #Logo{
+
+    width: 30px;
+    height: 100%;
+   
+}
+
+.Header .Content .Logo #Brand{
+
+    text-decoration: none;
+    font-size: var(--fs-lg);
+    font-family: 'Montserrat';
+    font-weight: 800;
+    letter-spacing: 1px;
+    background:linear-gradient(to right,
+    rgb(16, 199, 16),
+    rgb(8, 8, 192) 70%);
+    background-size:100% ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Header .Content #Ham-menu {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    z-index: 999;
+}
+.Header .Content #Ham-menu .bar{
+
+     width: 22px;
+     background-color: #E6EDF3;
+     height: 3px;
+     border-radius: 2px;
+     transition: all .3s ease-in-out;
+}
+
+
+.Header .Content #Ham-menu .bar.Open:nth-child(1){
+
+    transform: rotate(46deg) translate(5px,3px);
+
+     
+}
+
+.Header .Content #Ham-menu .bar.Open:nth-child(2){
+
+    opacity: 0;
+
+     
+}
+
+.Header .Content #Ham-menu .bar.Open:nth-child(3){
+
+    transform: rotate(-42deg) translate(5px,-4px);
+
+     
+}
+
+
+.Header .Content .Nav-Bg-Blured{
+
+    height: 0vh;
+    top: -3000px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+         transition: all .3s ease-in-out;
+             z-index: 999;
+             
+}
+
+.Header .Content .Nav-Bg-Blured.Open-Effect{
+
+      top: 0;
+      height: 100vh;
+}
+
+
+.Header .Content .Navbar{
+
+     display: flex;
+     flex-direction: column;
+     gap: 85px;
+     width: 100%;
+     height: auto;
+     position: absolute;
+     top: -2000px;
+     transition: all .3s ease-in-out;
+     z-index: 999;
+     padding: 15px 15px;
+     left: 0;
+     right: 0;
+        background-color: #0A0A0C;
+        border-radius: 0px 0px 8px 8px;
+     
+}
+.Header .fixed-container.Open-Nav{
+
+    backdrop-filter: none;
+}
+.Header .Content .Navbar.Open-Nav{
+
+      top: 0px;
+      
+      
+}
+.Header .Content .Navbar .Nav-link{
+
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+
+.Header .Content .Navbar .Nav-link li a{
+
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+    
+}
+
+.Header .Content .Navbar .Nav-link li a:active{
+
+    color: #06D90D;
+}
+.Header .Content .Navbar .Cta-Btn{
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+}
+.Header .Content .Navbar .Cta-Btn a{
+
+      display: inline-block;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: var(--fs-sm);
+      text-align: center;
+
+}
+
+.Header .Content .Navbar .Cta-Btn .Log-In{
+
+ 
+     border: #E6EDF3 2px solid;
+      color: #E6EDF3;
+}
+
+.Header .Content .Navbar .Cta-Btn .Get-Started{
+
+    background-color: #06D90D;
+    color: #0A0A0C;
+}
+
+
+
+@media (min-width:768px){
+
+    .Header .Content .Nav-Bg-Blured{
+
+        display: none;
+    }
+     .Header .Content .Logo #Logo{
+
+         width: 30px;
+     }
+     .Header .Content .Logo #Brand{
+
+          font-size: var(--fs-lg);
+     }
+      .Header .Content #Ham-menu{
+
+        display: none;
+      }
+
+      .Header .Content .Navbar{
+
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        background-color:transparent;
+      }
+
+      .Header .Content .Navbar .Nav-link{
+
+        flex-direction: row;
+        margin-right: auto;
+        gap: 50px;
+      }
+
+            .Header .Content .Navbar .Nav-link li a{
+
+                font-size: var(--fs-xs);
+                transition: all .3s ease-in-out;
+            }
+        .Header .Content .Navbar .Cta-Btn{
+
+            flex-direction: row;
+            width: auto;
+            align-items: center;
+        }
+
+           .Header .Content .Navbar .Cta-Btn a{
+
+              padding: 9px 15px;
+              width: auto;
+                  font-size: var(--fs-xxs);
+           }
+
+            .Header .Content .Navbar .Nav-link li a:hover{
+
+                color: #06D90D;
+            }
+
+         .Header .Content .Navbar .Logo{
+
+            display: none;
+         }
+
+
+         
+}
+
+@media (min-width: 1024px) {
+ 
+
+    .Header .Content .Navbar .Cta-Btn a{
+
+        font-size: var(--fs-sm);
+    }
+    .Header .Content .Logo #Brand{
+
+        font-size: var(--fs-xl);
+    }
+
+     .Header .Content .Logo #Logo{
+
+        width: 40px;
+     }
+
+     .Header .Content .Navbar .Nav-link li a{
+
+        font-size: var(--fs-sm);
+     }
+
+}
+
+@media (min-width: 1280px) {
+ 
+    .Header .Content{
+
+        max-width: 1300px;
+        background-color: transparent;
+        margin: auto;
+       
+    }
+}

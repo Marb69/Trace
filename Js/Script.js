@@ -1,62 +1,27 @@
 
 
+const HamMenu = document.querySelector('#Ham-menu');
 
-const HamMenu = document.querySelector('.ham-menu');
 
 HamMenu.addEventListener('click',()=>{
 
-   const barMenu = document.querySelectorAll('.bar'); 
+      const NavBar = document.querySelector('.Navbar');
+      const NavBluredEffect = document.querySelector('.Nav-Bg-Blured');
+      const BarAnimation = document.querySelectorAll('.bar');
+      const FixedContainer = document.querySelector('.fixed-container');
 
-     barMenu.forEach(bar =>{
+      FixedContainer.classList.toggle('Open-Nav');
 
-        bar.classList.toggle('open');
-     })
+      BarAnimation.forEach((bar) => {
+        
+        bar.classList.toggle('Open');
+         
+      });
 
-     const NavBar = document.querySelector('.navbar');
-     const navBlured = document.querySelector('.nav-bg-blured');
+    NavBar.classList.toggle('Open-Nav');
+    NavBluredEffect.classList.toggle('Open-Effect');
 
-     navBlured.classList.toggle('open-nav');
-     NavBar.classList.toggle('open-nav');
-
-    
 });
-
-
-
-const BrandsPath = [
-       
-        'Assets/Images/hack_the_box_logo.svg.svg',
-        'Assets/Images/the_linux_foundation_logo.svg.svg',
-        'Assets/Images/microsoft.svg',
-        'Assets/Images/udemy.svg',
-        'Assets/Images/cisco.svg'
-
-];
-
-renderBrand();
-
-
-function renderBrand(){
-
-
-      BrandsPath.forEach((brand)=>{
-
-      const Carousel = document.querySelector('#carousel');
-
-      const Brand = document.createElement('li');
-      Carousel.appendChild(Brand);
-      const img = document.createElement('img');
-      Brand.appendChild(img);
-
-      img.src = brand;
-
-      })
-   
-     
-
-
-}
-
 
 
 
