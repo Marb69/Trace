@@ -1,3 +1,19 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+
 .Glow-Effect-Green-Hero {
 
      background-color: #06D90D;
@@ -59,6 +75,8 @@
      display: flex;
      flex-direction: column-reverse;
      height: 100%;
+     max-width: 500px ;
+     margin: auto;
 
 }
 
@@ -131,6 +149,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
+     position: relative;
 
 }
 
@@ -151,24 +170,63 @@
 .Showcase-section .Content {
 
      padding: 60px 15px;
+       max-width: 500px ;
+     margin: auto;
+
 
 }
 
-.Showcase-section .Content .partners-logo {
 
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 30px;
-     overflow-x: hidden;
+.partners-logo {
+ 
+  overflow: hidden;
+  padding: 2rem 0;
+}
 
+.carousel-track {
+  display: flex;
+  width: calc(200px * 10); 
+  animation: scroll 25s linear infinite;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(1.1) drop-shadow(0 0 6px #00ffff40);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5) drop-shadow(0 0 12px #00ffff);
+}
+
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+
+.Showcase-section .Content .partners-logo .caraousel-track:hover {
+  animation-play-state: paused;
 }
 
 .Showcase-section .Content .partners-logo img {
 
-     width: 150px;
+     width: 100px;
      height: auto;
-     opacity: 0.6;
+    
 }
 
 .Showcase-section .Glow-Effect-Blue-showcase {
@@ -190,6 +248,13 @@
      color: #E6EDF3;
      margin-top: 50px;
      font-size: var(--fs-lg);
+}
+
+
+
+.Showcase-section .Content .courses .image-course{
+
+     position: relative;
 }
 
 .Showcase-section .Content .courses .context h3 {
@@ -231,10 +296,12 @@
      border-radius: 12px;
 }
 
-.About-section {
+.About-section .Content   {
 
      padding: 60px 15px;
-    
+      max-width: 500px ;
+     margin: auto;
+
 
 }
 
@@ -337,9 +404,11 @@
 
 }
 
-.Why-Section {
+.Why-Section .Content {
 
      padding: 60px 15px;
+       max-width: 500px ;
+     margin: auto;
 
 }
 
@@ -401,6 +470,7 @@
      display: flex;
      flex-direction: column;
      gap: 15px;
+     justify-content: center;
 
 }
 
@@ -454,6 +524,84 @@
 
 }
 
+.Testemonial-Section .Content {
+
+     padding: 60px 15px;
+       max-width: 500px ;
+     margin: auto;
+
+}
+
+.Testemonial-Section .Content h2 {
+
+     color: #E6EDF3;
+     font-size: var(--fs-lg);
+     text-align: center;
+     margin-bottom: 20px;
+
+}
+.Testemonial-Section .Content .Testemonials-Cards{
+
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.Testemonial-Section .Content .Testemonials-Cards .Card{
+
+     background-color: #141D2B;
+     padding: 20px;
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.Testemonial-Section .Content .Testemonials-Cards .Card .Double-Quote{
+
+     display: flex;
+     justify-content: center;
+}
+
+.Testemonial-Section .Content .Testemonials-Cards .Card .context {
+
+     color: #E6EDF3;
+     font-size: var(--fs-sm);
+     line-height: var(--lh-normal);
+     text-align: center;
+}
+
+.Testemonial-Section .Content .Testemonials-Cards .Card .person-info {
+
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin-top: 15px;
+     justify-content: center;
+}
+
+.Testemonial-Section .Content .Testemonials-Cards .Card .person-info .person-image img {
+
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+
+}
+
+.Testemonial-Section .Content .Testemonials-Cards .Card .person-info .person-details h4 {
+
+     color: #E6EDF3;
+     font-size: var(--fs-sm);
+}
+
+.Testemonial-Section .Content .Testemonials-Cards .Card .person-info .person-details span {
+
+     color: #808080;
+     font-size: var(--fs-xxs);
+
+}
+
+
+
 
 @media (min-width:768px) {
 
@@ -487,7 +635,7 @@
 
           flex-direction: row;
           align-items: center;
-
+          max-width: 700px ;
      }
 
      .Hero-section .Content .context h1 {
@@ -505,7 +653,11 @@
           flex-direction: row;
           justify-content: flex-start;
      }
+     
+     .Showcase-section .Content{
 
+           max-width: 700px ;
+     }
 
      .Showcase-section .Content .partners-logo {
 
@@ -521,6 +673,13 @@
           gap: 30px;
      }
      
+
+     .About-section .Content{
+
+          max-width: 700px ;
+     }
+
+
      .About-section .Content .About-cards {
 
           grid-template-columns: repeat(2, 1fr);
@@ -535,7 +694,10 @@
           flex-direction: row;
           justify-content: left;
      }
+     .Why-Section .Content{
 
+          max-width: 700px ;  
+     }
        .Why-Section .Content .Why-Section-Cards {
 
           grid-template-columns: repeat(2, 1fr);
@@ -544,6 +706,18 @@
                                "Card3 Card4 ";
           gap: 30px;
 
+     }
+
+       .Testemonial-Section .Content{
+
+          max-width: 700px ;
+     
+     }
+
+     .Testemonial-Section .Content .Testemonials-Cards {
+
+          flex-direction: row;
+          gap: 30px;
      }
 }
 
@@ -568,6 +742,36 @@
 
      }
 
+     @keyframes glowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+     .Glow-Effect-Green-Showcase {
+
+         
+          width: 1120px;
+          height: 200px;
+          border-radius: 70%;
+          position: absolute;
+          background: linear-gradient(45deg,#141D2B, #06D90D);
+               background-size: 300% 100%;
+               animation: glowMove 6s ease infinite;
+               filter: blur(90px);
+               opacity: 0.3;
+          z-index: -99;
+          bottom: 25%;
+          left: 21%;
+          right: 0;
+     }
+
      #Glow-Effect-Green {
 
 
@@ -577,33 +781,48 @@
 
      .Hero-section .Content {
 
-          max-width: 1200px;
+          max-width: 1520px;
           margin: 0 auto;
+          padding-right:  70px;
+          padding-left:  70px;
      }
 
      .Hero-section .Content .image img {
 
-          width: 600px;
+          width: 450px;
      }
 
      .Showcase-section .Content {
 
-          max-width: 1200px;
+              max-width: 1520px;
           margin: 0 auto;
+            padding-right:  70px;
+          padding-left:  70px;
      }
 
      .About-section .Content {
 
-          max-width: 1200px;
-          margin: auto;
+             max-width: 1520px;
+          margin: 0 auto;
+           padding-right:  70px;
+          padding-left:  70px;
      }
 
      .Why-Section .Content {
 
-          max-width: 1200px;
-          margin: auto;
+            max-width: 1520px;
+          margin: 0 auto;
+           padding-right:  70px;
+          padding-left:  70px;
      }
 
    
 
+     .Testemonial-Section .Content {
+
+            max-width: 1520px;
+          margin: 0 auto;
+           padding-right:  70px;
+          padding-left:  70px;
+     }
 }

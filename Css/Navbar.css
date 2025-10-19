@@ -43,8 +43,8 @@
 
 .Header .Content #Logo{
 
-    width: 30px;
-    height: 100%;
+    width:30px;
+    
    
 }
 
@@ -281,6 +281,10 @@
 @media (min-width: 1024px) {
  
 
+    .Header .Content{
+
+        padding: 0 50px;
+    }
     .Header .Content .Navbar .Cta-Btn a{
 
         font-size: var(--fs-sm);
@@ -306,9 +310,10 @@
  
     .Header .Content{
 
-        max-width: 1300px;
+        max-width: 1580px;
         background-color: transparent;
         margin: auto;
+        padding: 0 70px;
        
     }
 }
