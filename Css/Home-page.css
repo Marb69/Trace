@@ -47,12 +47,7 @@ section {
 
 }
 
-.Hero-section .Content {
 
-     padding-left: 15px;
-     padding-right: 15px;
-
-}
 
 :root {
 
@@ -75,8 +70,10 @@ section {
      display: flex;
      flex-direction: column-reverse;
      height: 100%;
-     max-width: 500px ;
+     max-width: 600px;
      margin: auto;
+     padding-left: 45px;
+     padding-right: 45px;
 
 }
 
@@ -163,15 +160,16 @@ section {
 
 .Showcase-section {
 
-     position: relative;
+     
      overflow: hidden;
 }
 
 .Showcase-section .Content {
 
-     padding: 60px 15px;
-       max-width: 500px ;
+       max-width: 600px;
      margin: auto;
+     padding-left: 45px;
+     padding-right: 45px;
 
 
 }
@@ -298,9 +296,10 @@ section {
 
 .About-section .Content   {
 
-     padding: 60px 15px;
-      max-width: 500px ;
+     padding: 60px 45px;
+         max-width: 600px;
      margin: auto;
+   
 
 
 }
@@ -406,9 +405,11 @@ section {
 
 .Why-Section .Content {
 
-     padding: 60px 15px;
-       max-width: 500px ;
+     padding: 60px 45px;
+          max-width: 600px;
      margin: auto;
+     padding-left: 45px;
+     padding-right: 45px;
 
 }
 
@@ -510,11 +511,46 @@ section {
 .Why-Section .Content .Why-Section-Cards .card:nth-child(3) {
 
      grid-area:CardImg; 
+     background-color: transparent;
+     position: relative;
+     
 }
+
+.Why-Section .Content .Why-Section-Cards .CardImg .Glow-Effect-Blue-Cert{
+
+
+     background-color: #2F81F7;
+     width: 70vw;
+     height: 40px;
+     border-radius: 80%;
+     position: absolute;
+     filter: blur(100px);
+     z-index: -99;
+     top: -20px;
+     left: 0;
+     animation: glowMove 6s ease infinite;
+     top: 40%;
+}
+
+
+          @keyframes glowMove {
+               0% {
+                    background-position: 0% 50%;
+               }
+     
+               50% {
+                    background-position: 100% 50%;
+               }
+     
+               100% {
+                    background-position: 0% 50%;
+               }
+          }
 
 .Why-Section .Content .Why-Section-Cards .card:nth-child(4) {
 
      grid-area:Card3; ;
+
 
 }
 
@@ -523,12 +559,19 @@ section {
      grid-area:Card4; ;
 
 }
+.Testemonial-Section {
 
+     position: relative;
+     
+    
+}
 .Testemonial-Section .Content {
 
-     padding: 60px 15px;
-       max-width: 500px ;
+     padding: 60px 45px;
+       max-width: 600px;
      margin: auto;
+     padding-left: 45px;
+     padding-right: 45px;
 
 }
 
@@ -602,6 +645,210 @@ section {
 
 
 
+.Contact-Section{
+
+     position: relative;
+     
+    
+}
+.Contact-Section .Content{
+
+
+      padding: 60px 45px;
+       max-width: 600px;
+     margin: auto;
+     padding-left: 45px;
+     padding-right: 45px;
+}
+
+.Contact-Section .Content h4 {
+
+     color: #E6EDF3;
+     font-size: var(--fs-lg);
+     margin-bottom: 20px;
+
+}
+
+
+.Contact-Section .Content .Contact-Container {
+
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     margin-top: 30px;
+     padding: 40px 15px;
+     border: 1px solid #141D2B;
+     border-radius: 12px;
+     position: relative;
+
+}
+
+
+.Contact-Container .Contact-Form{
+
+
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 15px;
+}
+.Contact-Container .Contact-Form .Input-Group label{
+
+     color: #E6EDF3;
+     font-size: var(--fs-sm);
+     margin-bottom: 6px;
+     display: block;
+}
+.Contact-Container .Contact-Form .Input-Group input,select{
+
+     width: 100%;
+     padding: 12px;
+     border-radius: 6px; 
+     border: none;
+     background-color:#182232;
+     color: #E6EDF3;
+
+}
+
+.Contact-Container .Contact-Form .Submit-Btn a{
+
+
+     display: inline-block;
+     font-weight: 600;
+     padding: 12px 24px;
+     border-radius: 6px;
+     text-decoration: none;
+     font-size: var(--fs-sm);
+     text-align: center;
+     background-color:#06D90D;
+     color: #0A0A0C;
+     width: 100%;
+}
+
+.Contact-Container .Contact-Information .info-item svg{
+
+     width: 24px;
+     height: 24px;
+     color: #E6EDF3;
+
+}
+.Contact-Container .Contact-Information .info-item{
+
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+        color: #808080;
+}
+
+.Contact-Container .Contact-Information .info-item h5 {
+
+  
+     font-size: var(--fs-sm);
+     font-weight: 600;   
+
+}
+ .Contact-Container .Contact-Context h4 {
+
+     color: #E6EDF3;
+     font-size: var(--fs-md);
+     margin-bottom: 10px;
+
+}
+
+.Contact-Container .Contact-Context p {
+
+     color: #808080;
+     font-size: var(--fs-sm);
+
+}
+
+.Contact-Container .Contact-Context .Learning-Path-Context{
+
+     
+     margin-top: 15px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   
+
+}
+
+.Contact-Container .Contact-Context .Learning-Path-Context h6{
+     color: #E6EDF3;
+     font-size: var(--fs-sm);
+     margin-bottom: 10px;
+}
+
+.Contact-Container .Contact-Context .Learning-Path-Context .Learning-Paths{
+
+        list-style: none;
+        color: #808080;
+        display: flex;
+        gap: 10px; ;
+        flex-direction: column;
+}
+
+.Contact-Container .Contact-Context .Learning-Path-Context .Learning-Paths li::before{
+
+     content: '✓';
+     color: #2F81F7;
+     margin-right: 8px;
+}
+
+.Glow-Effect-Blue-Contact {
+
+
+     width: 50vw;
+     height: 20vh;
+     border-radius: 90%;
+     position: absolute;
+     filter: blur(340px);
+     z-index: -999;
+     top: 10px;
+     left: 200px;
+
+             background: linear-gradient(45deg, #141D2B, #2F81F7
+             );
+        background-size: 300% 100%;
+     
+}
+
+
+.Footer {
+
+     margin-top: 60px;
+     padding: 20px 0;
+     text-align: center;
+     color: #808080;
+     font-size: var(--fs-xxs);
+}
+
+.Footer .Content .footer-links a {
+
+     color: #2F81F7;
+     text-decoration: none;
+
+}
+
+.Footer .Content .social-media-icons {
+
+     margin-top: 15px;
+     margin-bottom: 15px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 20px;
+
+}
+
+.Footer .Content .social-media-icons a svg {
+
+     width: 40px;
+     height: auto;
+     color: #808080;
+     transition: color 0.3s ease;
+
+}
 
 @media (min-width:768px) {
 
@@ -654,6 +901,46 @@ section {
           justify-content: flex-start;
      }
      
+
+     .Showcase-section .Glow-Effect-Blue-showcase {
+
+          top: -2px;
+          left: 2px;
+
+     }
+
+          @keyframes glowMove {
+               0% {
+                    background-position: 0% 50%;
+               }
+     
+               50% {
+                    background-position: 100% 50%;
+               }
+     
+               100% {
+                    background-position: 0% 50%;
+               }
+          }
+     
+          .Glow-Effect-Green-Showcase {
+     
+     
+               width: 820px;
+               height: 100px;
+               border-radius: 70%;
+               position: absolute;
+               background: linear-gradient(45deg, #141D2B, #06D90D);
+               background-size: 300% 100%;
+               animation: glowMove 6s ease infinite;
+               filter: blur(90px);
+               opacity: 0.3;
+               z-index: -99;
+               bottom: 25%;
+               left: 25%;
+               right: 0;
+          }
+
      .Showcase-section .Content{
 
            max-width: 700px ;
@@ -694,6 +981,24 @@ section {
           flex-direction: row;
           justify-content: left;
      }
+
+     .Why-Section .Content .Why-Section-Cards .Card3{
+
+          flex-direction: column;
+          align-items: flex-start;
+     }
+
+     .Why-Section .Content .Why-Section-Cards .CardImg .Glow-Effect-Blue-Cert{
+
+          left: 10%;
+          width: 30vw;
+     }
+
+     
+       .Why-Section .Content .Why-Section-Cards .CardImg{
+
+          max-width: 40vw;
+       }
      .Why-Section .Content{
 
           max-width: 700px ;  
@@ -701,7 +1006,7 @@ section {
        .Why-Section .Content .Why-Section-Cards {
 
           grid-template-columns: repeat(2, 1fr);
-          grid-template-areas: "Card1 CardImg"
+          grid-template-areas: "Card1  Card1"
                                "Card2 CardImg"
                                "Card3 Card4 ";
           gap: 30px;
@@ -719,6 +1024,27 @@ section {
           flex-direction: row;
           gap: 30px;
      }
+
+     .Contact-Section .Content {
+
+          max-width: 1000px; 
+     }
+.Contact-Section .Content     .Contact-Container {
+
+          flex-direction: row;
+          gap: 40px;
+        }
+
+       .Contact-Container .Contact-Form {
+
+          flex: 1;
+        }
+
+           .Contact-Container .Contact-Context {
+     
+               flex: 1;
+          }
+    
 }
 
 @media (min-width:1024px) {
@@ -735,43 +1061,7 @@ section {
      }
 
 
-     .Showcase-section .Glow-Effect-Blue-showcase {
-
-          top: -2px;
-          left: 2px;
-
-     }
-
-     @keyframes glowMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-     .Glow-Effect-Green-Showcase {
-
-         
-          width: 1120px;
-          height: 200px;
-          border-radius: 70%;
-          position: absolute;
-          background: linear-gradient(45deg,#141D2B, #06D90D);
-               background-size: 300% 100%;
-               animation: glowMove 6s ease infinite;
-               filter: blur(90px);
-               opacity: 0.3;
-          z-index: -99;
-          bottom: 25%;
-          left: 21%;
-          right: 0;
-     }
-
+     
      #Glow-Effect-Green {
 
 
@@ -808,6 +1098,18 @@ section {
           padding-left:  70px;
      }
 
+          .Why-Section .Content .Why-Section-Cards .CardImg .Glow-Effect-Blue-Cert{
+
+               left: 19px;
+          }
+      .Why-Section .Content .Why-Section-Cards {
+
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas: "Card1  CardImg"
+                               "Card2 CardImg"
+                               "Card3 Card4 ";
+
+      }
      .Why-Section .Content {
 
             max-width: 1520px;
@@ -824,5 +1126,25 @@ section {
           margin: 0 auto;
            padding-right:  70px;
           padding-left:  70px;
+     }
+
+     .Contact-Section .Content {
+
+            max-width: 1520px;
+          margin: 0 auto;
+           padding-right:  70px;
+          padding-left:  70px;
+     }
+
+  
+     .Contact-Section .Content .Contact-Container{
+
+          padding: 40px 40px;
+     }
+     .Contact-Section .Glow-Effect-Blue-Contact {
+
+          width: 60vw;
+          height: 60vh;
+          left: 900px;
      }
 }

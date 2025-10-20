@@ -16,16 +16,16 @@ body{
 
     font-family: 'Inter',sans-serif;
     background-color: #0A0A0C;
- 
+   
     
 }
 
 .layout{
 
 
-    display:grid;
-    grid-template-columns: 1fr;
-    
+   display: flex;
+   flex-direction: column;
+    overflow: hidden;
  
 
                      
