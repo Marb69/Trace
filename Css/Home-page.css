@@ -14,26 +14,16 @@ section {
 }
 
 
-.Glow-Effect-Green-Hero {
-
-     background-color: #06D90D;
-     width: 320px;
-     height: 100px;
-     border-radius: 50%;
-     position: absolute;
-     filter: blur(200px);
-     z-index: -99;
-     right: 0px;
-}
 
 .Glow-Effect-Blue-Hero {
 
      background-color: #2F81F7;
-     width: 320px;
+     width: 420px;
      height: 100px;
      border-radius: 50%;
      position: absolute;
      filter: blur(200px);
+  
      z-index: -99;
      left: 0px;
      bottom: 0;
@@ -42,7 +32,6 @@ section {
 
 .Hero-section {
 
-     overflow-y: hidden;
      position: relative;
 
 }
@@ -227,19 +216,7 @@ section {
     
 }
 
-.Showcase-section .Glow-Effect-Blue-showcase {
 
-     background-color: #2F81F7;
-     width: 320px;
-     height: 100px;
-     border-radius: 50%;
-     position: absolute;
-     filter: blur(200px);
-     z-index: -99;
-     left: 0px;
-     top: 0px;
-
-}
 
 .Showcase-section .Content h2 {
 
@@ -271,12 +248,23 @@ section {
      margin-top: 10px;
 }
 
+.Showcase-section .Content .courses .context .cta-btn svg{
+
+     width: 20px;
+     display: block;
+}
+
+
 .Showcase-section .Content .courses .context .cta-btn {
 
      margin-top: 15px;
      display: flex;
      text-decoration: none;
-
+     color: #2F81F7;
+     align-items: center;
+     gap: 5px;
+     font-weight: 500;
+     
 }
 
 .Showcase-section .Content .courses {
@@ -294,6 +282,80 @@ section {
      border-radius: 12px;
 }
 
+
+.Showcase-section .Content .Cert-Credentials h3{
+
+     color: #E6EDF3;
+     margin-top: 30px;
+     font-size: var(--fs-lg);
+}
+ .Cert-Credentials .Container{
+
+     margin-top: 30px;
+     padding: 40px 15px;
+     border: 1px solid #182232;
+     border-radius: 12px;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+
+ }
+
+ .Cert-Credentials .Container .Context{
+
+     flex: 1;
+ }
+
+ .Cert-Credentials .Container .visual{
+
+     flex: 1;
+ }
+ .Cert-Credentials .Container .Context h4{
+
+     color: #E6EDF3;
+     font-size: var(--fs-md);
+
+
+}
+
+ .Cert-Credentials .Container .Context p{
+
+     color: #808080;
+     margin-top:20px ;
+ }
+
+  .Cert-Credentials .Container .Context .key-points{
+
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-top: 30px;
+  }
+  .Cert-Credentials .Container .Context .key-point{
+
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     
+  }
+
+    .Cert-Credentials .Container .Context .key-point p{
+
+       font-weight: 600;
+       color: #E6EDF3;
+       margin-top: 0;
+    }
+
+        .Cert-Credentials .Container .Context .key-point span svg{
+
+          color: #06D90D;
+          width: 35px;
+        }
+
+        .Cert-Credentials .Container .visual img{
+
+          width: 100%;
+        }
 .About-section .Content   {
 
      padding: 60px 45px;
@@ -447,6 +509,7 @@ section {
 .Why-Section .Content .Why-Section-Cards .card img {
 
      width: 100%;
+     border-radius: 12px;
 }
 
 .Why-Section .Content .Why-Section-Cards .card h4 {
@@ -806,10 +869,8 @@ section {
      z-index: -999;
      top: 10px;
      left: 200px;
-
-             background: linear-gradient(45deg, #141D2B, #2F81F7
-             );
-        background-size: 300% 100%;
+     background: linear-gradient(45deg, #141D2B, #2F81F7);
+     background-size: 300% 100%;
      
 }
 
@@ -900,6 +961,8 @@ section {
           flex-direction: row;
           justify-content: flex-start;
      }
+
+     
      
 
      .Showcase-section .Glow-Effect-Blue-showcase {
@@ -927,17 +990,17 @@ section {
      
      
                width: 820px;
-               height: 100px;
+               height: 300px;
                border-radius: 70%;
                position: absolute;
                background: linear-gradient(45deg, #141D2B, #06D90D);
                background-size: 300% 100%;
                animation: glowMove 6s ease infinite;
-               filter: blur(90px);
+               filter: blur(190px);
                opacity: 0.3;
                z-index: -99;
-               bottom: 25%;
-               left: 25%;
+               top: 20%;
+               left: 55%;
                right: 0;
           }
 
@@ -960,6 +1023,12 @@ section {
           gap: 30px;
      }
      
+      .Cert-Credentials .Container{
+
+
+          flex-direction: row;
+          align-items: center;
+     }
 
      .About-section .Content{
 
