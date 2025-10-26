@@ -88,7 +88,7 @@
      display: inline-block;
      font-weight: 600;
      padding: 12px 24px;
-     border-radius: 6px;
+     border-radius: 4px;
      text-decoration: none;
      font-size: var(--fs-sm);
      text-align: center;
@@ -263,7 +263,7 @@
 .Showcase-section .Content .courses img {
 
      width: 100%;
-     border-radius: 12px;
+     border-radius: 4px;
 }
 
 
@@ -278,7 +278,7 @@
      margin-top: 30px;
      padding: 40px 15px;
      border: 1px solid #182232;
-     border-radius: 12px;
+     border-radius: 4px;
      display: flex;
      flex-direction: column;
      gap: 30px;
@@ -393,7 +393,7 @@
      display: inline-block;
      font-weight: 600;
      padding: 12px 24px;
-     border-radius: 6px;
+     border-radius: 4px;
      text-decoration: none;
      font-size: var(--fs-sm);
      text-align: center;
@@ -431,7 +431,7 @@
      display: flex;
      flex-direction: column;
      gap: 15px;
-     border-radius: 12px;
+     border-radius: 4px;
 
 }
 
@@ -493,7 +493,7 @@
 .Why-Section .Content .Why-Section-Cards .card img {
 
      width: 100%;
-     border-radius: 12px;
+     border-radius: 4px;
 }
 
 .Why-Section .Content .Why-Section-Cards .card h4 {
@@ -514,7 +514,7 @@
 
      background-color: #141D2B;
      padding: 20px;
-     border-radius: 12px;
+     border-radius: 4px;
      display: flex;
      flex-direction: column;
      gap: 15px;
@@ -640,7 +640,7 @@
 
      background-color: #141D2B;
      padding: 20px;
-     border-radius: 12px;
+     border-radius: 4px;
      display: flex;
      flex-direction: column;
      gap: 15px;
@@ -725,7 +725,7 @@
      margin-top: 30px;
      padding: 40px 15px;
      border: 1px solid #141D2B;
-     border-radius: 12px;
+     border-radius: 4px;
      position: relative;
 
 }
@@ -749,7 +749,7 @@
 
      width: 100%;
      padding: 12px;
-     border-radius: 6px; 
+     border-radius: 4px; 
      border: none;
      background-color:#182232;
      color: #E6EDF3;
@@ -762,7 +762,7 @@
      display: inline-block;
      font-weight: 600;
      padding: 12px 24px;
-     border-radius: 6px;
+     border-radius: 4px;
      text-decoration: none;
      font-size: var(--fs-sm);
      text-align: center;

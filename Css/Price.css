@@ -70,8 +70,9 @@ main{
 }
 
 .Card-container .card{
-
-     background-color: #101927;
+    
+    border: 1px solid #1E2939;
+    position: relative;
      border-radius: 10px;
      padding: 20px;
      flex: 1 1 calc(33.333% - 20px);
@@ -79,6 +80,43 @@ main{
      display: flex;
      flex-direction: column;
      gap: 20px;
+     overflow: hidden;
+}
+
+.glow-effect-price1{
+
+     background-color: #06d99a;
+     z-index: -99;
+     filter: blur(110px);
+     width: 20%;
+     height: 90%;
+     position: absolute;
+    left: 38%;
+    top: -140px;
+}
+
+.glow-effect-price2{
+
+     background-color: #2F81F7;
+    z-index: -99;
+     filter: blur(110px);
+     width: 20%;
+     height: 90%;
+     position: absolute;
+    left: 38%;
+    top: -140px;
+}
+
+.glow-effect-price3{
+
+     background-color: #06D90D;
+     z-index: -99;
+     filter: blur(110px);
+     width: 20%;
+     height: 90%;
+     position: absolute;
+    left: 38%;
+    top: -140px;
 }
 
 .Card-container .card h3{
@@ -139,6 +177,22 @@ main{
      color: #141D2B;
 }
 
+.Trace-course-section{
+
+     position: relative;
+
+}
+.Trace-course-section .glow-effect-blue{
+
+     background-color: #2F81F7;
+     z-index: -99;
+     filter: blur(230px);
+     width: 20%;
+     height: 30%;
+     position: absolute;
+    left: 10px;
+    top: 10px;
+}
 .Trace-course-section .Content{
 
 
@@ -147,12 +201,16 @@ main{
      gap: 15px;
 
 }
+
+
 .Trace-course-section .Content .card{
 
        padding: 40px;
        background-color: #101927;
        border-radius: 4px;
        border: 1px solid #1E2939;
+       
+       
 }
 
 .Trace-course-section .Content #card1 h2{
@@ -182,6 +240,8 @@ main{
      color: #808080;
      margin-bottom: 15px;
 }
+
+
 
 .FQA-section .Content{
 
@@ -286,6 +346,11 @@ main{
      
                max-width: 700px ;
                
+          }
+
+          .Trace-course-section .glow-effect-blue{
+
+               left: -290px;
           }
  .Price-card-section .Card-container{
 
