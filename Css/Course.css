@@ -1,0 +1,166 @@
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/Assets/Fonts/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+}
+
+:root {
+
+     --fs-xxs: clamp(0.65rem, 0.5rem + 0.6vw, 0.75rem);
+     --fs-xs: clamp(0.75rem, 0.6rem + 0.8vw, 0.875rem);
+     --fs-sm: clamp(0.875rem, 0.7rem + 1vw, 1rem);
+     --fs-md: clamp(1rem, 0.8rem + 1.2vw, 1.125rem);
+     --fs-lg: clamp(1.125rem, 1rem + 1.6vw, 1.375rem);
+     --fs-xl: clamp(1.5rem, 1.1rem + 2.4vw, 2rem);
+     --fs-xxl: clamp(2rem, 1.25rem + 3.2vw, 3rem);
+     --lh-tight: 1.05;
+     --lh-normal: 1.4;
+     --lh-loose: 1.6;
+    --text-color: #E6EDF3;
+    --sub-text-color: #808080;
+    --body-font: 'Inter', sans-serif;
+    --secondary-color:#2F81F7;
+}
+
+
+ body {
+      margin: 0;
+      background-color: #0a0a0f;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .carousel-item {
+      height: 60vh;
+   
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(40%) contrast(110%) saturate(120%);
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: start;
+      max-width: 700px;
+    }
+
+    .carousel-caption h1 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--secondary-color);
+     
+    }
+
+    .carousel-caption p {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: #E6EDF3;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    
+   
+.header{
+
+    font-size: var(--fs-xxl);
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: var(--lh-tight);
+    margin-bottom: 16px;
+}
+
+
+.sub-text{
+
+    font-size: var(--fs-md);
+    color: var(--sub-text-color);
+    line-height: var(--lh-normal);
+
+}
+
+ .cta-btn {
+
+     margin-top: 15px;
+     display: flex;
+     text-decoration: none;
+     color: #2F81F7;
+     align-items: center;
+     gap: 5px;
+     font-weight: 500;
+     
+}
+
+
+ .cta-btn svg{
+
+     width: 20px;
+     display: block;
+       transition: all ease-in-out .3s;
+}
+
+.cta-btn:hover{
+
+
+     svg{
+
+          transform: translateX(10px);
+     }
+}
+
+.include-list{
+
+    list-style:disc;
+    padding-left: 20px;
+    color: var(--sub-text-color);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-normal);
+    margin-bottom: 30px;
+    
+}
+
+
+
+.Card-Custom{
+
+    background-color: transparent;
+    transition: all ease-in-out .3s;   
+     border: 1px solid #11325f;
+}
+
+.Card-Custom:hover{
+
+
+     border: 1px solid #2F81F7;
+}
+
+
+.benifit-title {
+
+      font-size: var(--fs-xxl);
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: var(--lh-tight);
+    margin-bottom: 16px;
+}
+.card-benifit{
+
+    background-color: #101927;
+    color: #E6EDF3;
+    text-align: center;
+}
+
+.card-benifit svg{
+
+    margin-bottom: 15px;
+}

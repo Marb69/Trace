@@ -122,7 +122,7 @@ main{
 .Card-container .card h3{
      font-size: var(--fs-lg);
      margin-bottom: 10px;
-     color: #2F81F7;
+     color: #E6EDF3;
 }
 
 .Card-container .card .footer ul{
@@ -166,14 +166,13 @@ main{
      display: inline-block;
      padding: 10px 15px;
      background-color: #06D90D;
-     color: #FFFFFF;
      text-decoration: none;
      border-radius: 5px;
-     font-size: var(--fs-sm);
+     font-size: var(--fs-md);
      transition: background-color 0.3s ease;
      width: 100%;
      text-align: center;
-     font-weight: 600;
+     font-weight: 800;
      color: #141D2B;
 }
 

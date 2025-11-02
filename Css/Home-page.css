@@ -43,10 +43,7 @@
      display: flex;
      flex-direction: column-reverse;
      height: 100%;
-     max-width: 600px;
-     margin: auto;
-     padding-left: 45px;
-     padding-right: 45px;
+
 
 }
 
@@ -137,15 +134,6 @@
      overflow: hidden;
 }
 
-.Showcase-section .Content {
-
-       max-width: 600px;
-     margin: auto;
-     padding-left: 45px;
-     padding-right: 45px;
-
-
-}
 
 
 .partners-logo {
@@ -236,9 +224,17 @@
 
      width: 20px;
      display: block;
+     transition: all ease-in-out .3s;
 }
 
+.Showcase-section .Content .courses .context .cta-btn:hover{
 
+
+     svg{
+
+          transform: translateX(10px);
+     }
+}
 .Showcase-section .Content .courses .context .cta-btn {
 
      margin-top: 15px;
@@ -340,15 +336,6 @@
 
           width: 100%;
         }
-.About-section .Content   {
-
-     padding: 60px 45px;
-         max-width: 600px;
-     margin: auto;
-   
-
-
-}
 
 .About-section .Content h2 {
 
@@ -449,15 +436,6 @@
 
 }
 
-.Why-Section .Content {
-
-     padding: 60px 45px;
-          max-width: 600px;
-     margin: auto;
-     padding-left: 45px;
-     padding-right: 45px;
-
-}
 
 .Why-Section .Content h2 {
 
@@ -612,15 +590,6 @@
      
     
 }
-.Testemonial-Section .Content {
-
-     padding: 60px 45px;
-       max-width: 600px;
-     margin: auto;
-     padding-left: 45px;
-     padding-right: 45px;
-
-}
 
 .Testemonial-Section .Content h2 {
 
@@ -698,15 +667,7 @@
      
     
 }
-.Contact-Section .Content{
 
-
-      padding: 60px 45px;
-       max-width: 600px;
-     margin: auto;
-     padding-left: 45px;
-     padding-right: 45px;
-}
 
 .Contact-Section .Content h4 {
 
@@ -893,7 +854,7 @@
 
           flex-direction: row;
           align-items: center;
-          max-width: 700px ;
+   
      }
 
      .Hero-section .Content .context h1 {
@@ -954,10 +915,7 @@
                right: 0;
           }
 
-     .Showcase-section .Content{
-
-           max-width: 700px ;
-     }
+   
 
      .Showcase-section .Content .partners-logo {
 
@@ -980,11 +938,7 @@
           align-items: center;
      }
 
-     .About-section .Content{
-
-          max-width: 700px ;
-     }
-
+  
 
      .About-section .Content .About-cards {
 
@@ -1018,10 +972,7 @@
 
           max-width: 40vw;
        }
-     .Why-Section .Content{
-
-          max-width: 700px ;  
-     }
+   
        .Why-Section .Content .Why-Section-Cards {
 
           grid-template-columns: repeat(2, 1fr);
@@ -1032,22 +983,13 @@
 
      }
 
-       .Testemonial-Section .Content{
-
-          max-width: 700px ;
-     
-     }
-
+    
      .Testemonial-Section .Content .Testemonials-Cards {
 
           flex-direction: row;
           gap: 30px;
      }
 
-     .Contact-Section .Content {
-
-          max-width: 1000px; 
-     }
 .Contact-Section .Content     .Contact-Container {
 
           flex-direction: row;
@@ -1088,34 +1030,14 @@
 
      }
 
-     .Hero-section .Content {
-
-          max-width: 1520px;
-          margin: 0 auto;
-          padding-right:  70px;
-          padding-left:  70px;
-     }
+    
 
      .Hero-section .Content .image img {
 
           width: 450px;
      }
 
-     .Showcase-section .Content {
-
-              max-width: 1520px;
-          margin: 0 auto;
-            padding-right:  70px;
-          padding-left:  70px;
-     }
-
-     .About-section .Content {
-
-             max-width: 1520px;
-          margin: 0 auto;
-           padding-right:  70px;
-          padding-left:  70px;
-     }
+    
 
           .Why-Section .Content .Why-Section-Cards .CardImg .Glow-Effect-Blue-Cert{
 
@@ -1129,32 +1051,11 @@
                                "Card3 Card4 ";
 
       }
-     .Why-Section .Content {
-
-            max-width: 1520px;
-          margin: 0 auto;
-           padding-right:  70px;
-          padding-left:  70px;
-     }
+    
 
    
 
-     .Testemonial-Section .Content {
-
-            max-width: 1520px;
-          margin: 0 auto;
-           padding-right:  70px;
-          padding-left:  70px;
-     }
-
-     .Contact-Section .Content {
-
-            max-width: 1520px;
-          margin: 0 auto;
-           padding-right:  70px;
-          padding-left:  70px;
-     }
-
+    
   
      .Contact-Section .Content .Contact-Container{
 
