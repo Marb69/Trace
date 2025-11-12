@@ -31,6 +31,7 @@
       color: #fff;
     }
 
+
     .carousel-item {
       height: 60vh;
    
@@ -163,4 +164,25 @@
 .card-benifit svg{
 
     margin-bottom: 15px;
+}
+
+.Search-input {
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #808080;
+}
+
+.lucide-search-icon{
+
+  color: #808080;
+}
+
+#filter-course{
+
+  background-color: #808080;
+  color: #E6EDF3;
+  outline: none;
+  
 }

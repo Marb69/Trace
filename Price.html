@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="Css/Main.css" />
-     <link rel="stylesheet" href="Css/Navbar.css" />
-      <link rel="stylesheet" href="Css/Price.css">
-      <link rel="stylesheet" href="Css/Footer.css">
-          <link rel="shortcut icon" href="Assets/Images/Logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="Css/Navbar.css" />
+        <link rel="stylesheet" href="Css/Price.css">
+    <link rel="stylesheet" href="Assets/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/Main.css" />
+    <link rel="stylesheet" href="Css/Footer.css">
+    <link rel="shortcut icon" href="Assets/Images/Logo.png" type="image/x-icon">
     <title>Price</title>
 </head>
 <body>
@@ -40,8 +42,8 @@
             </ul>
 
             <div class="Cta-Btn">
-              <a href="login.html" class="Log-In">Log In</a>
-              <a href="" class="Get-Started">Get Started</a>
+                <a href="login.html" class="Log-In" target="_blank" >Log In</a>
+              <a href="register.html" target="_blank" class="Get-Started">Get Started</a>
             </div>
           </nav>
 
@@ -60,13 +62,14 @@
         <section class="Price-card-section">
 
 
-              <div class="Content">
+              <div class="container">
 
-                <h2>Affordable Cybersecurity Courses for Everyone</h2>
-                <p>Learn at your own pace with flexible pricing plans designed for students and professionals.  </p>
-                     <div class="Card-container">
+                <h2 >Affordable Cybersecurity Courses for Everyone</h2>
+                <p >Learn at your own pace with flexible pricing plans designed for students and professionals.  </p>
+                     <div class="row Card-container g-4 ">
 
-                        <div class="card">
+                      <div class="col-lg-4 col-md-6 col-12">
+                          <div class="card Card h-100">
 
                           <div class="glow-effect-price1">
                             
@@ -82,7 +85,7 @@
                                   <p class="Price">Free</p>
                                   <p class="Price-tag">(No payment required)</p>
                             
-                              <a href="" class="Select-Plan-Btn">Select Plan</a>
+                              <a href="login.html" target="_blank" class="Select-Plan-Btn">Select Plan</a>
                             </div>
 
                             <div class="footer">
@@ -95,8 +98,10 @@
                             </div>
                           
                         </div>
+                      </div>
 
-                         <div class="card">
+                         <div class="col-lg-4 col-md-6 col-12">
+                          <div class="card Card h-100">
 
                             <div class="glow-effect-price2">
                             
@@ -112,7 +117,7 @@
                                   <p class="Price">₱499 / month</p>
                                   <p class="Price-tag">(Best value for college learners!)</p>
                             
-                              <a href="" class="Select-Plan-Btn">Select Plan</a>
+                              <a href="login.html"  target="_blank" class="Select-Plan-Btn">Select Plan</a>
                             </div>
 
                             <div class="footer">
@@ -127,8 +132,10 @@
                             </div>
                           
                         </div>
+                         </div>
 
-                         <div class="card">
+                        <div class="col-lg-4 col-md-12 col-12">
+                           <div class="card Card  h-100">
 
                             <div class="glow-effect-price3">
                             
@@ -145,7 +152,7 @@
                                   <p class="Price">₱999 / month</p>
                                   <p class="Price-tag">(For advanced learners & aspiring professionals)</p>
                             
-                              <a href="" class="Select-Plan-Btn">Select Plan</a>
+                              <a href="login.html"  target="_blank" class="Select-Plan-Btn">Select Plan</a>
                             </div>
 
                             <div class="footer">
@@ -161,47 +168,83 @@
                             </div>
                           
                         </div>
+                        </div>
                      </div>
               </div>
         </section>
 
-        <section class="Trace-course-section">
+        <section class="Trace-course-section mt-4">
 
 
           <div class="glow-effect-blue"></div>
-             <div class="Content">
+             <div class="container">
 
-                    <div class="card " id="card1">
-                        <h2>Boost your cyber performance <br>
+                   <div class="row g-3">
+                    
+                    <div class="col-12">
+                       <div class="Card card" >
+                     <div class="card-body">
+                         <h2>Boost your cyber performance <br>
                           with additional products & services</h2>
                           <p>Premium add-ons enable use cases such as candidate assessment,<br>
                             breach and crisis simulation, benchmarking,<br> or broader workforce
                             exercises.</p>
+                     </div>
                         </div>
+                    </div>
 
-                    <div class="card">
-                       <h4>Penetration Testing</h4>
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="Card card h-100">
+                       <div class="card-body">
+                        <h4>Penetration Testing</h4>
                        <p>Simulate real-world cyberattacks to identify system vulnerabilities before hackers do.</p>
+                       </div>
                     </div>
-                       <div class="card">
-                       <h4>Threat Intelligence</h4>
-                       <p>Gain insights into emerging cyber threats to strengthen your organization’s defenses.</p>
+              
+
                     </div>
-                       <div class="card">
-                       <h4>Security Awareness Training</h4>
+
+                      <div class="col-lg-3 col-md-6 col-12">
+
+                          <div class= " Card card h-100">
+                       <div class="card-body">
+                        <h4>Threat Intelligence</h4>
+                        <p>Gain insights into emerging cyber threats to strengthen your organization’s defenses.</p>
+                       </div>
+                    </div>
+                       </div>
+                     
+                   
+                    <div class="col-lg-3 col-md-6 col-12" >
+
+                      <div class=" Card card h-100">
+                         
+                        <div class="card-body">
+                           <h4>Security Awareness Training</h4>
                        <p>Educate employees on phishing, malware, and safe online practices to reduce risk.</p>
+                        </div>
                     </div>
-                       <div class="card">
-                       <h4>Incident Response</h4>
+                    </div>
+                       
+                    <div class="col-lg-3 col-md-6 col-12">
+
+                      <div class="Card card h-100">
+                       <div class="card-body">
+                        <h4>Incident Response</h4>
                        <p>Respond quickly and effectively to cyber incidents to minimize damage and downtime.</p>
+                       </div>
                     </div>
+
+                    </div>
+                       
+                   </div>
              </div>
         </section>
 
         <section class="FQA-section">
 
 
-          <div class="Content">
+          <div class="Content container">
 
                 <div class="item-left">
                      

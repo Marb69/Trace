@@ -15,7 +15,7 @@ HamMenu.addEventListener('click',()=>{
       BarAnimation.forEach((bar) => {
         
         bar.classList.toggle('Open');
-         
+        document.querySelector('body').classList.toggle('scrollable');
       });
 
     NavBar.classList.toggle('Open-Nav');

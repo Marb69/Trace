@@ -22,6 +22,10 @@ body{
     
 }
 
+    body.scrollable{
+
+      overflow: hidden;
+    }
 @keyframes fadeInUp {
   from {
     opacity: 0;

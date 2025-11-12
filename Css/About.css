@@ -67,7 +67,7 @@ Section .Content{
 
     color: #A4B1CD;
     font-weight: 800;
-    font-size: 13px;
+    font-size: 1em;
     align-content: center;
 
 }
@@ -98,8 +98,9 @@ Section .Content{
 .About-Introduction .Content .right p{
 
     color: #E6EDF3;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     text-align: justify;
+    line-height: 1.5em;
 
 }
 
@@ -109,14 +110,9 @@ Section .Content{
     padding-bottom: 40px;
     padding-top: 20px;
 }
-.value-cards{
 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 
-}
-.value-cards .card h3{
+.value-cards .Card h3{
 
     font-size: var(--fs-xl);
     color: #E6EDF3;
@@ -124,16 +120,19 @@ Section .Content{
     
 }
 
-.value-cards .card p{
+.value-cards .Card p{
 
     font-size: var(--fs-md);
     color: #A4B1CD;
 }
-.value-cards .card{
+.value-cards .Card{
 
     text-align: center;
     padding: 20px;
     border-radius: 4px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
 
 }
 
@@ -146,6 +145,7 @@ Section .Content{
     margin-top: 30px;
     margin-bottom: 50px;
     justify-content: center;
+    padding: 25px;
 
 }
 
